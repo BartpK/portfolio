@@ -1,0 +1,432 @@
+.htmltag {
+  background-color: #e34c26;
+}
+
+.csstag {
+  background-color: #264de4;
+}
+
+.reacttag {
+  background-color: #61DBFB;
+}
+
+.victorytag {
+  background-color: #ff684f;
+}
+
+.javascripttag {
+  background-color: #F0DB4F;
+}
+
+.reduxtag {
+  background-color: #764abc;
+}
+
+.firebasetag {
+  background-color: #FFA611;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  min-width: 350px;
+}
+
+h1, h2, h3 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h3, .projecttitle {
+  color: #344175;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+#navmenucontainer {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+  text-align: center;
+  -webkit-clip-path: polygon(0 0, 0 90%, 50% 100%, 100% 90%, 100% 0);
+          clip-path: polygon(0 0, 0 90%, 50% 100%, 100% 90%, 100% 0);
+}
+
+.navmenuclosed {
+  height: 0vh;
+}
+
+.navmenuopen {
+  height: 80vh;
+}
+
+.navmenulist li {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.navmenulist {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fa-bars {
+  right: 0;
+  position: absolute;
+  margin: 1rem;
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+.fa-times {
+  float: right;
+  margin: 1rem;
+  display: block;
+  color: #344175;
+  font-size: 1.5rem;
+}
+
+.projectpreview {
+  width: 100%;
+  display: block;
+}
+
+.profilephoto {
+  border-radius: 50%;
+  max-width: 8rem;
+  border: solid 0.2rem white;
+  display: block;
+  margin: 3.125rem auto;
+}
+
+#pageheadercontainer {
+  width: 60%;
+}
+
+.contentcontainer {
+  max-width: 90%;
+  margin: auto;
+}
+
+.bodywrapper {
+  background-color: white;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 3.125rem;
+}
+
+.contentsection {
+  margin: 1.5em auto;
+  max-width: 1200px;
+}
+
+.pageheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: #21301e;
+  background: linear-gradient(16deg, #21301e 0%, #344175 100%);
+  min-height: 98vh;
+  -webkit-clip-path: polygon(0 0, 0 90%, 50% 100%, 100% 90%, 100% 0);
+          clip-path: polygon(0 0, 0 90%, 50% 100%, 100% 90%, 100% 0);
+  position: relative;
+  z-index: 0;
+}
+
+.greeting {
+  font-weight: 200;
+  font-size: 1.6rem;
+}
+
+.fullname {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.greeting, .fullname {
+  color: white;
+}
+
+.sectionheader {
+  margin: 1rem 0 1rem 0;
+  color: #344175;
+}
+
+.projectcard {
+  position: relative;
+  -webkit-box-shadow: lightgrey 0px 0px 8px;
+          box-shadow: lightgrey 0px 0px 8px;
+  margin: 2rem 0;
+}
+
+.projectcard:nth-child(1) {
+  grid-column: 1/-1;
+}
+
+.projectdetails {
+  padding: 1.5rem;
+  display: block;
+}
+
+.headertextwrapper {
+  margin: 2.5rem auto;
+  text-align: center;
+}
+
+.subheader {
+  margin: 1.25rem auto;
+  color: white;
+}
+
+.stack i {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0.75rem;
+  opacity: 0.8;
+}
+
+.stack {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.myskills i {
+  font-size: 1.6rem;
+  margin: 1.5rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.myskills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  width: 100%;
+  margin: 1.875rem auto;
+  line-height: 3rem;
+}
+
+.skilldiv {
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  color: #344175;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.skilldiv i {
+  display: block;
+  margin: 1rem;
+}
+
+.skilldiv:hover {
+  background-color: #344175;
+  color: white;
+}
+
+.arrowdown {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3.125rem;
+}
+
+.arrowdown a {
+  color: white;
+}
+
+p {
+  color: #545454;
+}
+
+.tag {
+  display: inline;
+  margin-right: 0.25rem;
+  font-size: 0.8rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+.projectcard a {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.buttonswrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 0.625rem;
+          column-gap: 0.625rem;
+}
+
+.projectcard p {
+  margin-bottom: 0.6rem;
+}
+
+.viewlivebutton {
+  background-color: #344175;
+  color: white;
+}
+
+.viewgithubbutton {
+  background-color: black;
+  color: white;
+}
+
+.projecttitle {
+  margin-bottom: 0.6rem;
+  min-height: 2.5rem;
+}
+
+.contactbuttonswrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin: 1.25rem 0;
+}
+
+.contactbuttonswrapper a {
+  padding: 0.5rem;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.whatsappbutton {
+  background-color: #25D366;
+}
+
+.linkedinbutton {
+  background-color: #0e76a8;
+}
+
+.emailbutton {
+  background-color: black;
+}
+
+.footercontainer {
+  height: 50px;
+  background: #21301e;
+  background: linear-gradient(16deg, #21301e 0%, #344175 100%);
+}
+
+.navlink {
+  cursor: pointer;
+}
+
+.navmenulist a {
+  text-decoration: none;
+  color: #344175;
+}
+
+a {
+  color: #344175;
+}
+
+.projectswrapper {
+  margin-top: 2rem;
+}
+
+.projectpreviewwrapper {
+  position: relative;
+}
+
+.tagwrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding: 1.5rem;
+  height: 3rem;
+  width: 100%;
+  background: #21301e;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 48, 30, 0)), color-stop(51%, rgba(52, 65, 117, 0.639093)), to(#344175));
+  background: linear-gradient(180deg, rgba(33, 48, 30, 0) 0%, rgba(52, 65, 117, 0.639093) 51%, #344175 100%);
+}
+
+.projectdetails div, .projectdetails p {
+  margin-top: 1rem;
+}
+
+.projectdetails p {
+  min-height: 4rem;
+}
+
+.whatsappbutton {
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.emailbutton {
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+@media (min-width: 800px) {
+  .projectswrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+  .projectcard {
+    margin: 0rem 0;
+  }
+  .myskills {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*# sourceMappingURL=style.css.map */

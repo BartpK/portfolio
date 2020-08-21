@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bart Kuipers | Front End Developer </title>
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;400;500;700&display=swap"
         rel="stylesheet">
@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <header>
         <nav>
             <div id="navmenucontainer" class="navmenuclosed">
@@ -28,15 +27,20 @@
                     <a href="#projects">
                         <li class="navlink">Projects</li>
                     </a>
+                    <a href="#skills">
+                        <li class="navlink">Skills</li>
+                    </a>
                     <a href="#contact">
                         <li class="navlink">Contact</li>
                     </a>
                 </ul>
-            </div> <i id="navbutton" class="fas fa-bars"></i>
+            </div>
 
 
         </nav>
+
         <section class="pageheader">
+            <i id="navbutton" class="fas fa-bars"></i>
             <div class="contentcontainer" id="pageheadercontainer">
                 <img class="profilephoto" src="images/profilephoto.jpg" alt="Bart Kuipers">
                 <div class="headertextwrapper">
@@ -44,22 +48,23 @@
                     <h1 class="fullname">Bart Kuipers</h1>
                     <p class="subheader">Front end developer from Utrecht, the Netherlands</p>
                 </div>
+
                 <div class="stack">
                     <i class="devicon-html5-plain"></i>
                     <i class="devicon-css3-plain"></i>
                     <i class="devicon-javascript-plain"></i>
                     <i class="devicon-react-original"></i>
-                    <i class="devicon-npm-original-wordmark"></i>
                     <i class="devicon-github-plain"></i>
+                    <i class="fas fa-chart-area"></i>
+                    <i class="fab fa-google"></i>
                     <i class="devicon-illustrator-plain"></i>
                 </div>
                 <div class="arrowdown">
-                    <i class="fas fa-angle-down"></i>
+                    <a href="#aboutme"><i class="fas fa-angle-down"></i></a>
                 </div>
             </div>
         </section>
     </header>
-
     <main>
         <section class="bodywrapper">
             <section class="contentsection" id="aboutme">
@@ -84,7 +89,7 @@
                     <div class="projectswrapper">
                         <div class="projectcard">
                             <div class="projectpreviewwrapper">
-                                <img class="projectpreview" src="images/projects - dashboard.png" />
+                                <img loading="lazy" class="projectpreview" src="images/projects - dashboard.png" />
                                 <div class="tagwrapper">
                                     <p class="reacttag tag">ReactJS</p>
                                     <p class="csstag tag">CSS</p>
@@ -112,7 +117,7 @@
 
                         <div class="projectcard">
                             <div class="projectpreviewwrapper">
-                                <img class="projectpreview" src="images/projects-recruitee widget.png" />
+                                <img loading="lazy" class="projectpreview" src="images/projects-recruitee widget.png" />
                                 <div class="tagwrapper">
                                     <p class="htmltag tag">HTML</p>
                                     <p class="csstag tag">CSS</p>
@@ -139,7 +144,7 @@
 
                         <div class="projectcard">
                             <div class="projectpreviewwrapper">
-                                <img class="projectpreview" src="images/projects - playlist.png" />
+                                <img loading="lazy" class="projectpreview" src="images/projects - playlist.png" />
                                 <div class="tagwrapper">
                                     <p class="reacttag tag">ReactJS</p>
                                     <p class="reduxtag tag">Redux</p>
@@ -167,7 +172,7 @@
 
                         <div class="projectcard">
                             <div class="projectpreviewwrapper">
-                                <img class="projectpreview" src="images/projects - todoapp.png" />
+                                <img loading="lazy" class="projectpreview" src="images/projects - todoapp.png" />
                                 <div class="tagwrapper">
                                     <p class="htmltag tag">HTML</p>
                                     <p class="csstag tag">CSS</p>
@@ -193,7 +198,7 @@
 
                         <div class="projectcard">
                             <div class="projectpreviewwrapper">
-                                <img class="projectpreview" src="images/projects - hangman.png" />
+                                <img loading="lazy" class="projectpreview" src="images/projects - hangman.png" />
                                 <div class="tagwrapper">
                                     <p class="htmltag tag">HTML</p>
                                     <p class="csstag tag">CSS</p>
@@ -220,16 +225,44 @@
             </section>
             <section class="contentsection">
                 <div class="contentcontainer">
-                    <h2 class="sectionheader">My stack</h2>
-                    <div class="mystack">
-                        <i class="devicon-html5-plain"></i>
-                        <i class="devicon-css3-plain"></i>
-                        <i class="devicon-javascript-plain"></i>
-                        <i class="devicon-react-original"></i>
-                        <i class="devicon-npm-original-wordmark"></i>
-                        <i class="devicon-github-plain"></i>
-                        <i class="devicon-illustrator-plain"></i>
+                    <h2 class="sectionheader" id="skills">My skills</h2>
+                    <div class="myskills">
+                        <div class="skilldiv">
+                            <i class="devicon-html5-plain"></i>
+                            <h4 class="skillname">HTML 5</h4>
+                        </div>
+                        <div class="skilldiv">
+                            <i class="devicon-css3-plain"></i>
+                            <h4 class="skillname">CSS 3</h4>
+                        </div>
+                        <div class="skilldiv">
+                            <i class="devicon-javascript-plain"></i>
+                            <h4 class="skillname">JavaScript</h4>
+                        </div>
+                        <div class="skilldiv">
+                            <i class="devicon-react-original"></i>
+                            <h4 class="skillname">ReactJS</h4>
+                        </div>
+                        <div class="skilldiv">
+                            <i class="devicon-github-plain"></i>
+                            <h4 class="skillname">Github</h4>
+                        </div>
+                        <div class="skilldiv">
+                            <i class="fas fa-chart-area"></i>
+                            <h4 class="skillname">Google Analytics</h4>
+                        </div>
+                        <div class="skilldiv">
+                            <i class="fab fa-google"></i>
+                            <h4 class="skillname">Google Optimize</h4>
+                        </div>
+                        <div class="skilldiv">
+                            <i class="devicon-illustrator-plain"></i>
+                            <h4 class="skillname">Adobe Illustrator</h4>
+                        </div>
+
+
                     </div>
+                </div>
                 </div>
             </section>
             <section class="contentsection" id="contact">

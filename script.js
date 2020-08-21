@@ -11,9 +11,6 @@ navLinks.forEach(link => {
     link.addEventListener('click', () => toggleNav())
 })
 
-
-
-
 navButton.addEventListener('click', () => toggleNav())
 navButtonClose.addEventListener('click', () => toggleNav())
 
