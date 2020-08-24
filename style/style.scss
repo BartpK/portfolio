@@ -5,6 +5,7 @@ $victory : #ff684f;
 $javascript : #F0DB4F;
 $redux : #764abc;
 $firebase : #FFA611;
+$sass : #bf4080;
 
 $mainblue: #344175;
 
@@ -37,6 +38,10 @@ $mainblue: #344175;
 
 .firebasetag {
     @include stackcolor($firebase)
+}
+
+.sasstag {
+    @include stackcolor($sass)
 }
 
 * {
