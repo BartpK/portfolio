@@ -337,6 +337,7 @@ p {
 
 .whatsappbutton {
   background-color: #25D366;
+  cursor: pointer;
 }
 
 .linkedinbutton {
@@ -345,6 +346,7 @@ p {
 
 .emailbutton {
   background-color: black;
+  cursor: pointer;
 }
 
 .footercontainer {
